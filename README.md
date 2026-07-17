@@ -1,29 +1,37 @@
 # Abhiyan Dash Shrestha - Cybersecurity Portfolio
 
-## About Me
-IT Graduate with strong interest in Security Operations and Threat Detection. Currently building hands-on experience through home labs.
+IT Graduate with hands-on experience in Security Operations and Threat Detection. Currently building practical skills through home labs focused on SIEM, alert analysis, and incident documentation.
 
 ## Projects
 
 ### Wazuh SOC Home Lab
-- Built a Security Operations Center simulation using Wazuh (Open Source SIEM/XDR)
-- Deployed agents on Windows and Linux endpoints
-- Configured threat detection for failed logins, file integrity, and anomalies
-- Documented incident analysis and recommended countermeasures
+Built a functional Security Operations Center simulation using **Wazuh** (Open Source SIEM/XDR).
 
-**Technologies Used**: Wazuh, VirtualBox, Linux, Windows
+**What I did:**
+- Deployed Wazuh Manager on Ubuntu Server
+- Installed and configured Wazuh Agent on Windows endpoint
+- Enabled File Integrity Monitoring (FIM)
+- Detected and analyzed real security events (failed logins, file additions, registry changes)
+- Documented findings and recommended countermeasures in formal incident reports
 
-**Key Skills Demonstrated**:
+**Key Skills Demonstrated:**
 - SIEM deployment and monitoring
 - Log analysis and alert investigation
-- Basic incident response documentation
+- File Integrity Monitoring
+- Incident documentation and response recommendations
+
+**Technologies:** Wazuh, VirtualBox, Ubuntu, Windows
+
+📁 [View Wazuh Home Lab](./Wazuh-Home-Lab)
 
 ## Skills
 - Networking Fundamentals
 - Linux & Windows Administration
 - Security Monitoring & Log Analysis
 - Threat Detection using SIEM
+- Incident Documentation
 
 ## Contact
 - Email: abhiyaan95@gmail.com
-- Phone number: +66-63-261-8324
+- LinkedIn: [Your LinkedIn]
+- Location: Bangkok, Thailand

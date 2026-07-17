@@ -1,37 +1,25 @@
-# Abhiyan - Cybersecurity Portfolio
+# Wazuh SOC Home Lab
 
-IT Graduate with hands-on experience in Security Operations and Threat Detection. Currently building practical skills through home labs focused on SIEM, alert analysis, and incident documentation.
+This project simulates a basic Security Operations Center (SOC) using Wazuh SIEM.
 
-## Projects
+## Lab Overview
+- **Wazuh Manager**: Ubuntu Server
+- **Endpoint**: Windows 11 (Agent installed)
+- **Network**: Bridged Adapter
 
-### Wazuh SOC Home Lab
-Built a functional Security Operations Center simulation using **Wazuh** (Open Source SIEM/XDR).
+## What Was Implemented
+- Agent deployment and monitoring
+- Detection of failed login attempts
+- File Integrity Monitoring (FIM)
+- Registry change detection
+- Incident analysis and documentation
 
-**What I did:**
-- Deployed Wazuh Manager on Ubuntu Server
-- Installed and configured Wazuh Agent on Windows endpoint
-- Enabled File Integrity Monitoring (FIM)
-- Detected and analyzed real security events (failed logins, file additions, registry changes)
-- Documented findings and recommended countermeasures in formal incident reports
+## Folder Structure
+- `Screenshots/` → Evidence of alerts and dashboard
+- `Incident-Notes.md` → Short analysis of individual alerts
+- `Incident-Reports/` → Formal incident reports
 
-**Key Skills Demonstrated:**
-- SIEM deployment and monitoring
-- Log analysis and alert investigation
-- File Integrity Monitoring
-- Incident documentation and response recommendations
-
-**Technologies:** Wazuh, VirtualBox, Ubuntu, Windows
-
-📁 [View Wazuh Home Lab](./Wazuh-Home-Lab)
-
-## Skills
-- Networking Fundamentals
-- Linux & Windows Administration
-- Security Monitoring & Log Analysis
-- Threat Detection using SIEM
-- Incident Documentation
-
-## Contact
-- Email: abhiyaan95@gmail.com
-- LinkedIn: [Your LinkedIn]
-- Location: Bangkok, Thailand
+## Key Alerts Detected
+- Multiple failed login attempts (possible brute force)
+- File added to the system
+- Registry integrity checksum changes

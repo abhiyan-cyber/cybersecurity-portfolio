@@ -10,26 +10,31 @@
   - Monitor this user/account for further attempts
   - Notify system owner if activity continues
 
+## Incident Note 2 – File Added to the System
 
-Incident Note 2 – File Added to the System
+**Threat Category:** File Integrity Monitoring / Unauthorized File Creation  
 
-Threat Category: File Integrity Monitoring / Unauthorized file creation
-Detection Method: Wazuh SIEM – File Integrity Monitoring (syscheck) on Windows-Workstation
-What Happened: A new file was added to the system:
-C:\Users\All Users\Microsoft\Diagnosis\AggregatorStorage\Triggers\9229153479643334637_trigger.dat
-Alert Details:
-Rule Description: File added to the system
-Rule ID: 554
-Agent: Windows-Workstation
+**Detection Method:** Wazuh SIEM (File Integrity Monitoring) on Windows-Workstation  
 
-Possible Cause:
-Normal system/Microsoft diagnostic activity
-Or potentially suspicious software creating files in system locations
+**What Happened:**  
+A new file was detected on the system:  
+`C:\Users\All Users\Microsoft\Diagnosis\AggregatorStorage\Triggers\9229153479643334637_trigger.dat`
 
-Impact:
-Low to Medium – New files in system folders can sometimes be used by malware for persistence or data collection
-Recommended Countermeasure:
-Verify whether this file is related to legitimate Microsoft diagnostics
-Monitor the folder for further unusual file creations
-Investigate the process that created the file if the activity continues
-Consider adding tighter FIM rules on sensitive system directories
+**Alert Details:**
+- Rule Description: File added to the system
+- Rule ID: 554
+- Agent: Windows-Workstation
+- Rule Groups: ossec, syscheck, syscheck_entry_added, syscheck_file
+
+**Possible Cause:**
+- Legitimate Microsoft diagnostic activity
+- Potential suspicious software creating files in system directories
+
+**Impact:**  
+Low to Medium – New files in system locations can sometimes be used by malware for persistence or data collection.
+
+**Recommended Countermeasures:**
+- Verify if the file is related to legitimate Microsoft diagnostics
+- Monitor the folder for further unusual file creation
+- Investigate the process responsible if similar activity continues
+- Consider applying stricter FIM rules on sensitive system directories
